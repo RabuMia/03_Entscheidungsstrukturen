@@ -5,7 +5,7 @@ let ageJohn, ageMark;
 let isJohnOlder, isJohnEqual;
 
 // Wertzuweisung
-ageJohn = 25;
+ageJohn = 30;
 ageMark = 30;
 
 // Test | Logische Aussage
@@ -31,17 +31,42 @@ console.log("isJohnEqual: " + isJohnEqual);
 // mit Alternative
 // entweder ja oder nein
 
-if (isJohnOlder) 
-{
-    // Ja-zweig / true
-    console.log("John ist älter.");   
-} 
-else 
-{
-    // Nein-zweig / false
-    console.log("John ist jünger."); 
-}
+// if (isJohnOlder) 
+// {
+//     // Ja-zweig / true
+//     console.log("John ist älter.");   
+// } 
+// else 
+// {
+//     // Nein-zweig / false
+//     console.log("John ist jünger."); 
+// }
 
 /**** Ternäre (ternary) Schreibweise ****/
 //Kurzschreibweise, gut zu wissen
-console.log ( (isJohnOlder) ? "John is older" : "Mark is older");
+// console.log ( (isJohnOlder) ? "John is older" : "Mark is older");
+
+/**** If - Else If ****/
+//mit alternativen Fällen (älter, jünger, gleich alt)
+
+
+if (isJohnOlder) 
+// Ja-zweig / true
+{
+    
+    console.log("John ist älter.");   
+} 
+// 1. Alternative
+else if(isJohnEqual)
+{
+
+    console.log("John ist gleich alt.");   
+}
+// ggf. weitere Alternativen
+
+// Nein-zweig / false
+else 
+{
+    
+    console.log("John ist jünger."); 
+}
